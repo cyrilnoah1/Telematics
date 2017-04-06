@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Telematics</string>
+    <string name="server_url">https://api.proemion.com</string>
 </resources>
