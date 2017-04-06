@@ -6,15 +6,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.rapid.telematics.R;
+import com.example.rapid.telematics.common.Utils;
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
     private final String TAG = BaseActivity.class.getSimpleName();
+
+    protected Utils utils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
+        utils = new Utils();
     }
+
+    /**
+     * Method to initialize views.
+     */
+    abstract void initViews();
 
     /**
      * Method to add a Fragment to the required container.

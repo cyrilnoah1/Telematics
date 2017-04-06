@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rapid.telematics.activities.LoginActivity">
+
+    <!--LOGIN DETAILS container-->
+    <LinearLayout
+        android:id="@+id/ll_main_login_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!--USERNAME field-->
+        <EditText
+            android:id="@+id/et_main_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/et_main_password" />
+
+        <!--PASSWORD field-->
+        <EditText
+            android:id="@+id/et_main_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <!--SUBMIT button-->
+        <Button
+            android:id="@+id/btn_main_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SUBMIT" />
+    </LinearLayout>
+
+</RelativeLayout>

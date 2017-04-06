@@ -17,7 +17,7 @@ public interface ServiceHelper {
     @POST("authz/oauth2/token")
     Call<JsonObject> login(@Field("username") String username, @Field("password") String password,
                            @Field("grant_type") String grantType, @Field("client_id") String clientId);
-    
+
 }
 
 
